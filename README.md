@@ -1,2 +1,2 @@
-# info2180-lab3
-Lab 3
+# info2180 Lab 3
+This is lab 3 for Laren Parkes
