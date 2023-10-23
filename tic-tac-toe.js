@@ -69,5 +69,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+
+    function handleNewGameClick() {
+        gameBoard = ["", "", "", "", "", "", "", "", ""];
+        gameActive = true;
+        currentPlayer = "X";
+        statusMessage.innerText = "Move your mouse over a square and click to play an X or an O.";
+
+        squares.forEach(square => {
+            square.classList.remove("X", "O");
+            square.innerText = "";
+        });
+    }
+
+    newGameButton.addEventListener("click", handleNewGameClick);
 });
 
