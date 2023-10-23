@@ -26,5 +26,17 @@ document.addEventListener("DOMContentLoaded", function() {
         square.addEventListener("mouseleave", () => handleCellLeave(index));
     });
 
+    
+    function handleCellHover(index) {
+        if (gameBoard[index] === "" && gameActive) {
+            squares[index].classList.add("hover");
+        }
+    }
+    
+    function handleCellLeave(index) {
+        if (gameBoard[index] === "" && gameActive) {
+            squares[index].classList.remove("hover");
+        }
+    }
 });
 
